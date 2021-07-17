@@ -1,0 +1,8 @@
+pybind11
+cppimport
+jupyter
+numpy
+pandas
+scikit-allel
+scipy
+matplotlib
