@@ -266,7 +266,7 @@ def main():
 # =============================================================================
     #User genome variants Information read. Here we read only some specific 
     #fields which we need to analysis
-    GenomeVariantsInput = allel.read_vcf('quartet.variants.annotated.vcf', samples=['ISDBM322015'],fields=[ 'variants/CHROM', 'variants/ID', 'variants/REF',
+    GenomeVariantsInput = allel.read_vcf('quartet_variants_annotated.vcf', samples=['ISDBM322015'],fields=[ 'variants/CHROM', 'variants/ID', 'variants/REF',
     'variants/ALT','calldata/GT'])
     
     #Retrive SNP information from user genome variant file
