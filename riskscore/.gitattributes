@@ -1,1 +1,2 @@
 quartet.variants.annotated.vcf filter=lfs diff=lfs merge=lfs -text
+quartet_variants_annotated.vcf filter=lfs diff=lfs merge=lfs -text
