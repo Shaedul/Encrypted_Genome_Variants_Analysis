@@ -27,7 +27,7 @@ Note : VirtualBox is an optional. If you don't want to install docker in your ma
 ## Step 1 : Clone the repository or download 
 
 1. Open a Terminal or PowerShell<br>
-`git clone https://`
+`git clone https://github.com/Shaedul/GenomeAnalysis_PySEAL.git`
 
  or download the ZIP folder
 
