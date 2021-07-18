@@ -33,7 +33,7 @@ RUN make
 
 # Build SEAL Python wrapper
 COPY /SEALPython /SEAL/SEALPython
-COPY /test /SEAL/riskscore
+COPY /riskscore /SEAL/riskscore
 WORKDIR /SEAL/SEALPython
 RUN pip3 install --upgrade pip
 RUN pip3 install setuptools

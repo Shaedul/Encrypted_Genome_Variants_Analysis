@@ -33,16 +33,16 @@ Note : VirtualBox is an optional. If you don't want to install docker in your ma
 
 **Notes :**
 * The repository is a Docker Image SEAL Python wrapper (PySeal)
-* Directory `~GenomeAnalysis_PySEAL-master/riskscore` obtain encryptedAnalysis.py script for Encrypted Genomic variants analysis
-* Directory `~GenomeAnalysis_PySEAL-master/riskscore` obtain unencryptedAnalysis.py script for Unecrypted Genomic variants analysis
-* Directory `~GenomeAnalysis_PySEAL-master/riskscore` obtain reference data (all csv file)for five specific disease
-* Directory `~GenomeAnalysis_PySEAL-master/riskscore` obtain individual Genome varaints (.vcf file)
+* Directory `~GenomeAnalysis_PySEAL/riskscore` obtain encryptedAnalysis.py script for Encrypted Genomic variants analysis
+* Directory `~GenomeAnalysis_PySEAL/riskscore` obtain unencryptedAnalysis.py script for Unecrypted Genomic variants analysis
+* Directory `~GenomeAnalysis_PySEAL/riskscore` obtain reference data (all csv file)for five specific disease
+* Directory `~GenomeAnalysis_PySEAL/riskscore` obtain individual Genome varaints (.vcf file)
 
 
 ## Step 2 : Run the docker Image and create PySeal package
 
 1. Get to the directory<br>
-`cd ~/GenomeAnalysis_PySEAL-master`
+Ubuntu: `cd ~/GenomeAnalysis_PySEAL` or windows : `cd GenomeAnalysis_PySEAL/`
 
 2. Run the build-docker file to create the docker Image & Package<br>
 `build-docker.sh`
@@ -62,7 +62,7 @@ Expected :- then enter into the root directory : root@containerID:/SEAL$
 ## Step 3 : Run the Encrypted Analysis on Individuals Genomic variants to Calculate specific desease riskscore`
 
 1. Get to the riskscore directory<br>
-`cd ~/GenomeAnalysis_PySEAL-master/riskscore`
+ubuntu: `cd ~/GenomeAnalysis_PySEAL/riskscore` or windows `cd GenomeAnalysis_PySEAL/riskscore/`
 
 2. view list of file <br>
 `ls` for ubuntu or `dir` for windows
@@ -73,7 +73,7 @@ Expected :- then enter into the root directory : root@containerID:/SEAL$
 Expected :- you will see the all encrypted variant information, then finally get the riskscore and graphical view of risk score 
 
  **Notes :**
- --if want to modify the encrypted analysis script go to directory `cd ~/GenomeAnalysis_PySEAL-master/riskscore` then modify the exp.py. To execute the modified script you need to send script to your image container. you can send your script using following command
+ --if want to modify the encrypted analysis script go to directory `cd ~/GenomeAnalysis_PySEAL/riskscore` then modify the exp.py. To execute the modified script you need to send script to your image container. you can send your script using following command
  `docker cp exp.py containerID:/SEAL/riskscore`.
 
 # Part 2 : Run unencrypted Analysis
@@ -84,7 +84,7 @@ You can compare encrypted analysis risk score with unecrypted analysis result by
 
 2. Get to the directory outside of the docker <br>
 
-`cd ~/GenomeAnalysis_PySEAL-master/riskscore`
+`cd ~/GenomeAnalysis_PySEAL/riskscore` or windows : `cd GenomeAnalysis_PySEAL/riskscore/`
 
 3. Run the unecrypted analysis script <br>
 
