@@ -1,4 +1,4 @@
-# Genome Varinat Analysis: Genomic Disease Risk Score Analysis on Encrypted Genomic variants
+# Genome Variants Analysis: Genomic Disease Risk Score Analysis on Encrypted Genomic variants
 
 The main goal of this repository is to establish a secure genome variants analysis platform. For this purpose, we have used the Fully Homomorphic Encryption (FHE) scheme to perform the genome variants analysis on encrypted mode, where FHE allows to perform Arithmetic Computation.
 Here we used a Python wrapper docker image of PySeal library (Fork version of SEAL), which is a homomorphic encryption library developed by researchers in the Cryptography Research Group at Microsoft Research. Following instructions, you will guide to see our experiment result. In this experiment, 
