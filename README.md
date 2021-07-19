@@ -73,8 +73,8 @@ ubuntu: `cd ~/GenomeAnalysis_PySEAL/riskscore` or windows `cd GenomeAnalysis_PyS
 Expected :- you will see the all encrypted variant information, then finally get the riskscore and graphical view of risk score 
 
  **Notes :**
- --if want to modify the encrypted analysis script go to directory `cd ~/GenomeAnalysis_PySEAL/riskscore` then modify the exp.py. To execute the modified script you need to send script to your image container. you can send your script using following command
- `docker cp exp.py containerID:/SEAL/riskscore`.
+ --if you want to modify the encrypted analysis script go to directory `cd ~/GenomeAnalysis_PySEAL/riskscore` then modify the encryptedAnalysis.py. To execute the modified script, then you need to send script to your image container. you can send your script using following command
+ `docker cp encryptedAnalysis.py containerID:/SEAL/riskscore`.
 
 # Part 2 : Run unencrypted Analysis
 
