@@ -78,7 +78,7 @@ Expected :- you will see the all encrypted variant information, then finally get
 
 # Part 2 : Run unencrypted Analysis
 
-You can compare encrypted analysis risk score with unecrypted analysis result by executing unencryptedAnalysis.py
+You can compare encrypted analysis risk score with unecrypted analysis result by executing unencryptedAnalysis.py in outside of the docker.
 
 1. Open Terminal or PowerShell <br>
 
@@ -92,7 +92,7 @@ You can compare encrypted analysis risk score with unecrypted analysis result by
 
  **Notes :**
  --Make sure that you have installed all require library specially scikit-allel, scipy
-, matplotlib outside of the docker.
+, matplotlib outside of the docker. you can find all the necessary library : https://pypi.org/
 
 ### Congratualtion you have done successfully
 

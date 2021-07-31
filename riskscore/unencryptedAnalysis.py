@@ -24,7 +24,7 @@ def draw_z_score(x, cond, mu, sigma, title):
 
 def main():
 
-    GenomeVariantsInput = allel.read_vcf('/home/shahed/riskScore/quartet_variants_annotated.vcf', samples=['ISDBM322015'],fields=[ 'variants/CHROM', 'variants/ID', 'variants/REF',
+    GenomeVariantsInput = allel.read_vcf('quartet_variants_annotated.vcf', samples=['ISDBM322015'],fields=[ 'variants/CHROM', 'variants/ID', 'variants/REF',
  'variants/ALT','calldata/GT'])
 
     print(GenomeVariantsInput)
